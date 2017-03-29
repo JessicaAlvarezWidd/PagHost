@@ -1,0 +1,43 @@
+<html>
+    <head>  
+        <script type="text/javascript" src="js/jquery.js"> </script>     
+        <script type="text/javascript" src="js/funciones.js"> </script> 
+    </head>
+    <body>
+        <form action="http://jessicaalvarez.hol.es/index.php/persona/login" method="POST">
+           <!--http://localhost/abm-json/index.php/persona/login-->
+            <h1>Login</h1>
+            <input type="text" name="nombre" placeholder="Nombre"> </input>
+            <input type="password" name="dni" placeholder="DNI"> </input>
+            <input type="submit"></input>
+        </form> 
+
+        <form action="http://jessicaalvarez.hol.es/index.php/personas" method="GET">
+            <!--http://localhost/abm-json/index.php/personas-->
+            <h1>Mostrar Personas</h1>
+            <input type="submit"></input>
+        </form> 
+
+        <form action="http://jessicaalvarez.hol.es/index.php/persona" method="GET">
+            <!--http://localhost/abm-json/index.php/persona-->
+            <h1>Mostrar Persona</h1>
+            <input type="text" name="id" placeholder="DNI"> </input>
+            <input type="submit"></input>
+        </form> 
+
+        <div>
+            
+			<input placeholder="ID" type="Text" id="idOtro"/><br>
+
+			<input placeholder="Nombre" type="Text" id="nombreOtro"/><br>
+
+			<input placeholder="Apellido" type="Text" id="apellidoOtro"/><br>
+
+			<input placeholder="DNI" type="Text" id="dniOtro"/><br>            
+			
+			<input type="button" value="Agregar" onclick="agregar()"/> 
+			<input type="button" value="Modificar" onclick="modificar()"/>
+			<input type="button" value="Borrar" onclick="borrar()"/> 
+        </div> 
+    </body>
+</html>
